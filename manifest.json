@@ -1,0 +1,16 @@
+{
+  "name": "Kanji converter",
+  "description": "Switch between new character form and old character form.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/convert.js"]
+    }
+  ],
+  "web_accessible_resources" : [{
+    "resources" : [ "src/*.json" ],
+    "matches" : ["<all_urls>"]
+}]
+}
